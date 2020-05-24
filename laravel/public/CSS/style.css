@@ -1,5 +1,6 @@
 /*
-footer部分いらないなら6行目(7行目は消さないこと!!)から10行目and21行目も消してok  
+<テンプレートCSS>
+footer部分いらないなら#wrapper(margin:0;は消さないこと!!)からmin-height: 79vh; と　margin-top: auto;も消してok
 */
 
 body,

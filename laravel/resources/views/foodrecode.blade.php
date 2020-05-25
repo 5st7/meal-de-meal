@@ -6,7 +6,7 @@
 @include('layouts.head')
 
 @section('content')
-<h1>食品登録をしましょう!!</h1>
+<h1>食品を登録しよう!!</h1>
 <form method="POST" action="/contact">
     <dl>
         <dt>カテゴリ</dt>

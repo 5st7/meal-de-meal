@@ -1,11 +1,16 @@
 body{
   margin: 0;
-  background-color:rgb(253, 243, 188);
+  background-color:rgb(253, 253, 231);
 }
 
 header {
   height: 90px; /*ヘッター縦サイズ*/
-  background-color:rgb(255, 217, 0);
+  background-color:rgb(253, 216, 53);
+  border:solid 5px rgb(109, 76, 65);
+  border-right: transparent;
+  border-left: transparent;
+  border-top: transparent;
+  text-align:center
 }
 
 #title{
@@ -14,4 +19,8 @@ header {
 
 table{
   margin:auto;
+}
+
+h1{
+  text-align: center;
 }

@@ -11,6 +11,28 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+Auth::routes();
+
+Route::get('/', function () {
+    return view('top');
+});
+
+Route::get('/setting', function () {
+    return view('setting');
+});
+
+Route::get('/foodrecode', function () {
+    return view('foodrecode');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/top', 'TopController@index');

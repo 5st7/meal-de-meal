@@ -17,6 +17,8 @@ Route::get('/', function () {
 });
 */
 
+Auth::routes();
+
 Route::get('/', function () {
     return view('top');
 });
@@ -28,3 +30,4 @@ Route::get('/setting', function () {
 Route::get('/foodrecode', function () {
     return view('foodrecode');
 });
+

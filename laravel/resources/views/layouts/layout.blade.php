@@ -7,12 +7,12 @@
 </head>
 <body>
     <header>
-        <h1 id="title">header 共通部分</h1>
+        <h1 id="title">みーるでMeal</h1>
         <table>
         <tr>
-        <td><button type=“button” onclick="location.href='/'">TopPage</button></td>
-        <td><button type=“button” onclick="location.href='/setting'">SettingPage</button></td>
-        <td><button type=“button” onclick="location.href='/foodrecode'">FoodRecodePage</button></td>
+        <td><button type=“button” onclick="location.href='/'">ホーム</button></td>
+        <td><button type=“button” onclick="location.href='/setting'">設定</button></td>
+        <td><button type=“button” onclick="location.href='/foodrecode'">食品登録</button></td>
         </tr>
         </table>
         <!-- <button type="button" onclick="history.back()">戻る</button> -->

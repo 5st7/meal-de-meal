@@ -1,35 +1,16 @@
-/*
-<テンプレートCSS>
-footer部分いらないなら#wrapper(margin:0;は消さないこと!!)からmin-height: 79vh; と　margin-top: auto;も消してok
-*/
-
-/* body,
-#wrapper {
-  margin:0;
-  display: flex;
-  flex-direction: column;
-  min-height: 79vh; /* フッターの高さ
-} */
-
 body{
   margin: 0;
+  background-color:rgb(253, 243, 188);
 }
 
 header {
-height: 90px; /*ヘッター縦サイズ*/
-background-color:rgb(255, 217, 0);
+  height: 90px; /*ヘッター縦サイズ*/
+  background-color:rgb(255, 217, 0);
 }
 
-
-/* footer {
-height: 90px; /*フッター縦サイズ
-background-color:rgb(255, 217, 0);
-margin-top: auto;
-} */
-
 #title{
-    margin:0;
-   }
+  margin:0;
+}
 
 table{
   margin:auto;

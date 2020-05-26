@@ -2,6 +2,7 @@
 @section('title', '一覧')
 
 @section('content')
+
 @include('layouts.nav')
   <div class="container">
     <div class="row">

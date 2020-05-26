@@ -29,8 +29,6 @@ Route::get('/foodrecode', function () {
     return view('foodrecode');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::post('food_entry','MealController@food_entry');
 
 Route::get('/top', 'TopController@index');

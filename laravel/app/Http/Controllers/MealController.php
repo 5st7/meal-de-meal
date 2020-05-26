@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Meal_info;
 
 class MealController extends Controller
 {
@@ -24,5 +25,12 @@ class MealController extends Controller
             ],
         ];
         return view('top',['mials' => $mials]);
+  }
+
+  public function food_entry(Request $request)
+  {
+      $food_data = new Meal_info();
+      $food_data->fill($request->except('_token'))->save();
+      return redirect('/foodrecode');
   }
 }

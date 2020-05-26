@@ -3,19 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Meal;
 
 class MealController extends Controller
 {
-    public function create()
+  public function index()
     {
-        return view('foodrecode')->with([ 'posts' => Post::all() ]);
-    }
-    
-    public function store(Request $req)
-    {
-        $b = new Meal();
-        $b->fill($req->except('_token'))->save();
-        return redirect('foodrecode');
-    }
+        // ダミーデータ
+        $mials = [
+            (object) [
+                'meal_name' => "にんじん",
+                'meal_limitday' => now(),
+            ],
+            (object) [
+                'meal_name' => "しょうゆ",
+                'meal_limitday' => now(),
+            ],
+            (object) [
+                'meal_name' => "らーめん",
+                'meal_limitday' => now(),
+            ],
+        ];
+        return view('top',['mials' => $mials]);
+  }
 }

@@ -46,7 +46,10 @@
                 <label for="text6b">価格</label>
                 <input class="form-control" type="text" id="text6b" placeholder="ここに入力">
             </div>
-            <button type="button" class="btn btn-warning">登録</button>
+            <div>
+                <i class="fas fa-camera float-left fa-3x"></i>
+            </div>
+            <button type="button" class="btn btn-warning float-right">登録</button>
           </div>
         </div>
       </div>

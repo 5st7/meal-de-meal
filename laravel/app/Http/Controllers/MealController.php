@@ -27,7 +27,7 @@ class MealController extends Controller
         return view('top',['mials' => $mials]);
   }
 
-  public function food_entry(Request $request)
+  public function store(Request $request)
   {
       $food_data = new Meal_info();
       $food_data->fill($request->except('_token'))->save();

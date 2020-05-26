@@ -11,7 +11,7 @@
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
         <div class="card mt-3">
           <div class="card-body text-center">
-          <form method="POST" action="{{ route('food_entry') }}">
+          <form method="POST" action="{{route('foodrecode')}}">
                 @csrf
             <div class="form-group">
                 <label for="select1a">カテゴリ選択</label>

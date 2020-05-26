@@ -19,9 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/', function () {
-    return view('top');
-});
+Route::get('/', 'MealController@index');
 
 Route::get('/setting', function () {
     return view('setting');
@@ -30,3 +28,4 @@ Route::get('/setting', function () {
 Route::get('/foodrecode', function () {
     return view('foodrecode');
 });
+

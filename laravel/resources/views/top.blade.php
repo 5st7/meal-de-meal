@@ -1,12 +1,16 @@
-<!-- top -->
-@extends('layouts.layout')
-
-@section('title','ミールでMeal_TopPage')
-@section('description','ディスクリプション')
-@include('layouts.head')
+@extends('app')
+@section('title', '一覧')
 
 @section('content')
-    <h6>BaseFormat!! top.blade.php</h6>
-    <h1>This is TopPage</h1>
-
+  <div class="container float-center w-50">
+    <div class="list-group-flush">
+      @foreach($mials as $meal)
+      <div class="list-group-item">
+        <i class="far fa-image fa-2x mr-4 grey p-3 white-text rounded-circle" aria-hidden="true"></i>
+        {{$meal->meal_name}}
+        <span class="float-right">賞味期限:{{$meal->meal_limitday->format('Y/m/d H:i')}}</span>
+      </div>
+      @endforeach
+    </div>
+  </div>
 @endsection

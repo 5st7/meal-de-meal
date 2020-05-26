@@ -30,7 +30,7 @@
                  <!-- MDB core JavaScript -->
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
 
-        <!-- <button type="button" onclick="history.back()">戻る</button> -->
+         <!-- <button type="button" onclick="history.back()">戻る</button> -->
     </header>
     <div id="wrapper">
         @yield('content')

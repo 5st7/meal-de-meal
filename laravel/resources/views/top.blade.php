@@ -13,7 +13,7 @@
           <div class="col-4 col-md-3">¥</div>
         </div>
         <div class="row">
-          <div class="col-4 col-md-3">冷蔵庫の貯金</div>
+          <div class="col-4 col-md-3">冷蔵庫貯金</div>
           <div class="col-4 col-md-3">¥</div>
         </div>
 

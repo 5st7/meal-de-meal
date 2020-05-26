@@ -1,15 +1,11 @@
 <!-- foodrecode -->
-@extends('layouts.layout')
+@extends('app')
 
 @section('title','ミールでMeal_FoodRecodePae')
 @section('description','ディスクリプション')
-@include('layouts.head')
 
 @section('content')
-
-@auth
-  <p>ログインユーザーに表示する。</p>
-@endauth
+@include('layouts.nav')
 <div class="container">
     <div class="row">
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">

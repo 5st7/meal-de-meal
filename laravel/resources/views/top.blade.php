@@ -7,12 +7,21 @@
     <div class="row">
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
         @include('home_button')
-        <div class="list-group-flush">
+        <div class="row mt-5">
+          <div class="col-4 col-md-3">今月の目標</div>
+          <div class="col-4 col-md-3">¥</div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-md-3">冷蔵庫の貯金</div>
+          <div class="col-4 col-md-3">¥</div>
+        </div>
+
+        <div class="list-group-flush mt-5">
           @foreach($mials as $meal)
           <div class="list-group-item">
           <i class="far fa-image fa-2x mr-4 grey p-3 white-text rounded-circle" aria-hidden="true"></i>
           {{$meal->meal_name}}
-          <span class="float-right">賞味期限:{{$meal->meal_limitday->format('Y/m/d H:i')}}</span>
+          <span class="float-right">賞味期限:{{$meal->meal_limitday->format('Y/m/d')}}</span>
           </div>
           @endforeach
         </div>

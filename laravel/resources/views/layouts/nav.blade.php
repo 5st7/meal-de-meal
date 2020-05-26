@@ -1,6 +1,5 @@
 <header>
-
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+  <nav class="navbar fixed-top sticky-top navbar-expand-lg navbar-dark pink scrolling-navbar">
     <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,5 +33,4 @@
       </ul>
     </div>
   </nav>
-
 </header>

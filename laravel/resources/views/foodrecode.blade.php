@@ -11,6 +11,8 @@
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
         <div class="card mt-3">
           <div class="card-body text-center">
+          <form method="POST" action="{{ route('food_entry') }}">
+                @csrf
             <div class="form-group">
                 <label for="select1a">カテゴリ選択</label>
                 <select id="select1a" class="form-control">
@@ -50,6 +52,7 @@
                 <i class="fas fa-camera float-left fa-3x"></i>
             </div>
             <button type="button" class="btn btn-warning float-right">登録</button>
+            </form>
           </div>
         </div>
       </div>

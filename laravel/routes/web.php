@@ -29,8 +29,3 @@ Route::get('/foodrecode', function () {
     return view('foodrecode');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/top', 'TopController@index');

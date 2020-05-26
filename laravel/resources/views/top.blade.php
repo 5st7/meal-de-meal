@@ -8,7 +8,7 @@
       <div class="list-group-item">
         <i class="far fa-image fa-2x mr-4 grey p-3 white-text rounded-circle" aria-hidden="true"></i>
         {{$meal->meal_name}}
-        <span class="float-right">賞味期限:{{$meal->meal_limitday->format('Y/m/d H:i')}}</span>
+        <span class="float-right">賞味期限:{{$meal->meal_limitday->format('Y/m/d')}}</span>
       </div>
       @endforeach
     </div>

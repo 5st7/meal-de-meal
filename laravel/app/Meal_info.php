@@ -6,7 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Meal_info extends Model
 {
-    protected $table = 'meal_info';
-    protected $fillable = ['meal_category','meal_name','meal_price','meal_limitday','meal_num'];
-
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo('App\User');
+    }
+    protected $table = 'meals';
+    protected $dates = [
+        'meal_limitday'
+    ];
 }

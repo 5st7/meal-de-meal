@@ -8,7 +8,6 @@
 @section('content')
 <h1>食品を登録しよう!!</h1>
 <form method="POST" action="/food_entry">
-{!! csrf_field() !!}
 @csrf
     <dl>
         <dt>カテゴリ</dt>

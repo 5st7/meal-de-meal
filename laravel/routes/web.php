@@ -19,9 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/', function () {
-    return view('top');
-});
+Route::get('/', 'MealController@index');
 
 Route::get('/setting', function () {
     return view('setting');

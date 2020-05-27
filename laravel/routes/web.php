@@ -28,5 +28,6 @@ Route::get('/setting', function () {
 Route::get('/foodrecode', function () {
     return view('foodrecode');
 });
+
 Route::post('/foodrecode', 'MealController@store');
 Route::get('/top', 'TopController@index');

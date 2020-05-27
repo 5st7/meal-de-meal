@@ -1,20 +1,17 @@
 <!-- foodrecode -->
-@extends('layouts.layout')
+@extends('app')
 
 @section('title','ミールでMeal_FoodRecodePae')
 @section('description','ディスクリプション')
-@include('layouts.head')
 
 @section('content')
-
-@auth
-  <p>ログインユーザーに表示する。</p>
-@endauth
+@include('layouts.nav')
 <div class="container">
     <div class="row">
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
         <div class="card mt-3">
           <div class="card-body text-center">
+          @include('error_list')
           <form method="POST" action="foodrecode">
                 @csrf
             <div class="form-group">
@@ -35,7 +32,7 @@
             </div>
             <div class="form-group">
                 <label for="text6b">賞味・消費期限</label>
-                <input class="form-control" name="meal_limitday" type="date" />
+                <input class="form-control" name="meal_limitday" value="<?php echo date('Y-m-d'); ?>"  type="date" />
             </div>
             <div class="form-group">
                 <label for="select1a">数量

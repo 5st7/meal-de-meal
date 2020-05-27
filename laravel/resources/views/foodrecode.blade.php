@@ -12,7 +12,7 @@
         <div class="card mt-3">
           <div class="card-body text-center">
           @include('error_list')
-          <form method="POST" action="foodrecode">
+          <form method="post" action="foodrecode" enctype="multipart/form-data">
                 @csrf
             <div class="form-group">
                 <label for="select1a">カテゴリ選択</label>
@@ -49,9 +49,7 @@
                 <label for="text6b">価格</label>
                 <input class="form-control" name="meal_price" type="text" id="text6b" placeholder="ここに入力">
             </div>
-            <div>
-                <i class="fas fa-camera float-left fa-3x"></i>
-            </div>
+            <input type="file" id="file" name="meal_image" class="form-control">
             <button type="submit" class="btn btn-warning float-right">登録</button>
             </form>
           </div>

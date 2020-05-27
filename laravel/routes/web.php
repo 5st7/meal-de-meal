@@ -20,7 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/', 'MealController@index');
-Route::get('/', 'MealController@index');
 
 Route::get('/setting', function () {
     return view('setting');

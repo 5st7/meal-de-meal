@@ -3,6 +3,7 @@
 
 @section('content')
   <div class="container float-center w-50">
+    {{$morth_cost}}
     <div class="list-group-flush">
       @foreach($mials as $meal)
       <div class="list-group-item">

@@ -20,9 +20,10 @@ class CreateMealsTables extends Migration
             $table->string('meal_category');
             $table->string('meal_name');
             $table->date('meal_limitday');
-            $table->biginteger('meal_num');
+            $table->biginteger('meal_num')->default(1);
             $table->biginteger('meal_price');
-            $table->string('meal_image');
+            $table->string('meal_image')->nullable();
+            $table->boolean('used')->default(0);
             $table->timestamps();
         });
     }

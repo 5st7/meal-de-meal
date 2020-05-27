@@ -14,7 +14,7 @@
                 @csrf
             <div class="form-group">
                 <label for="select1a" style="color: #fffde7;">カテゴリ選択</label>
-                <select id="select1a" name="meal_category" class="form-control " style="background-color: #fffde7;">
+                <select id="select1a" name="meal_category" class="form-control" style="padding:0px; background-color: #fffde7;">
                         <option>野菜・果物</option>
                         <option>飲料</option>
                         <option>肉</option>

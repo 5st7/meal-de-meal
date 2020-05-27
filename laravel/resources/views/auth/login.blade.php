@@ -27,10 +27,10 @@
                 </div>
  
                 <input type="hidden" name="remember" id="remember" value="on">
-                <button class="btn btn-block mt-2 mb-2" type="submit">ログイン</button>
+                <button class="btn btn-block btn-warning2 mt-2 mb-2" type="submit">ログイン</button>
               </form>
 
-              <div class="mt-0">
+              <div class="mt-2">
                 <a href="{{ route('register') }}" class="card-text">ユーザー登録はこちら</a>
               </div>
 

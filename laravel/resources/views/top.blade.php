@@ -21,12 +21,20 @@
           <div class="col-4 col-md-3">¥</div>
         </div>
 
-        <div class="list-group-flush mt-5">
+        <div class="list-group-flush mt-5" id="list">
           @foreach($mials as $meal)
-          <div class="list-group-item">
-            <div class="far fa-image fa-2x mr-4 grey p-3 white-text rounded-circle float-left" aria-hidden="true"></div>
-            {{$meal->meal_name}}
-            <span class="float-right">賞味期限:{{$meal->meal_limitday->format('Y/m/d')}}</span>
+          <div class="list-group-item d-flex justify-content-between">
+            @if($meal->meal_image != null)
+              <img id="meal" src="/storage/{{$meal->meal_image}}" class="rounded-circle">
+            @else
+              <div class="far fa-image fa-2x mr-4 grey p-3 white-text rounded-circle" aria-hidden="true"></div>
+            @endif
+            <span>
+              {{$meal->meal_name}}
+            </span>
+            <span>
+              賞味期限:{{$meal->meal_limitday->format('Y/m/d')}}
+            </span>
           </div>
           @endforeach
         </div>

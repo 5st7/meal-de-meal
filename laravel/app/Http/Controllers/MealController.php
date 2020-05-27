@@ -14,7 +14,7 @@ class MealController extends Controller
 
   public function index()
     {
-        $mials = Meal_info::all()->sortBy('meal_limitday');
+        $mials = Meal_info::all()->where('user_id',Auth::id())->sortBy('meal_limitday');
         return view('top',['mials' => $mials]);
     }
 

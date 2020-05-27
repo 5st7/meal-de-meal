@@ -8,17 +8,17 @@
     <div class="row">
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
         @include('home_button')
-        <div class="row mt-5">
-          <div class="col-4 col-md-3">今月の目標</div>
-          <div class="col-4 col-md-3">¥</div>
+        <div class="d-flex justify-content-between mt-5">
+          <div>今月の目標</div>
+          <div>¥</div>
         </div>
-        <div class="row">
-          <div class="col-4 col-md-3">今月の食費</div>
-          <div class="col-4 col-md-3">¥{{$morth_cost}}</div>
+        <div class="d-flex justify-content-between">
+          <div>今月の食費</div>
+          <div>¥ {{$morth_cost}}</div>
         </div>
-        <div class="row">
-          <div class="col-4 col-md-3">冷蔵庫貯金</div>
-          <div class="col-4 col-md-3">¥</div>
+        <div class="d-flex justify-content-between">
+          <div>冷蔵庫貯金</div>
+          <div>¥</div>
         </div>
 
         <div class="list-group-flush mt-5" id="list">
@@ -29,10 +29,10 @@
             @else
               <div class="far fa-image fa-2x mr-4 grey p-3 white-text rounded-circle" aria-hidden="true"></div>
             @endif
-            <span>
+            <span class="align-self-center">
               {{$meal->meal_name}}
             </span>
-            <span>
+            <span class="align-self-center">
               賞味期限:{{$meal->meal_limitday->format('Y/m/d')}}
             </span>
           </div>

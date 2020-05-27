@@ -22,10 +22,12 @@
         </li>
         <span class="border-bottom"></span>
         <li class="nav-logaut">
-          <a class="nav-link font-weight-bold" href="#">ログアウト</a>
+          <button class="btn btn-link nav-link font-weight-bold" form="logout-button">ログアウト</button>
         </li>
-<!--         <span class="border-bottom border-dark"></span>
- -->      </ul>
+      </ul>
+      <form id="logout-button" method="POST" action="{{ route('logout') }}">
+        @csrf
+      </form>
     </div>
   </nav>
 </header>

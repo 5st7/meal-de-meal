@@ -13,6 +13,10 @@
           <div class="col-4 col-md-3">¥</div>
         </div>
         <div class="row">
+          <div class="col-4 col-md-3">今月の食費</div>
+          <div class="col-4 col-md-3">{{$morth_cost}}¥</div>
+        </div>
+        <div class="row">
           <div class="col-4 col-md-3">冷蔵庫貯金</div>
           <div class="col-4 col-md-3">¥</div>
         </div>

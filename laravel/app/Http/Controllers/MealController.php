@@ -28,11 +28,12 @@ class MealController extends Controller
      'month_cost' => $month_cost
      ]);
  }
-   public function alert(){
+ 
+ public function alert(){
       // 賞味期限
       $toDay = date("Y-m-d H:i:s");
       $syomikigen = Meal_info::all()->where('user_id',Auth::id())->where('meal_limitday','-',$toDay,'<=',5)->sortBy('meal_limitday');
-      return view('alert',$syomikigen);
+      return view('alert',['meals'=>$syomikigen]);
  }
 
  public function use_meal(Request $request){

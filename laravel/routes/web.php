@@ -31,3 +31,5 @@ Route::get('/foodrecode', function () {
 
 Route::post('/foodrecode', 'MealController@store');
 Route::get('/top', 'TopController@index');
+
+Route::get('/alert', 'MealController@alert');

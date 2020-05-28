@@ -1,0 +1,77 @@
+strong {
+    color: #6d4c41;
+}
+
+body {
+    font-size:100%;
+    text-align:center;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+    background-color:#FFFDE7
+}
+
+.list-group-item {
+    font-size:100%;
+    background-color:#FFFDE7;
+}
+
+.btn-warning1{
+    color: #6d4c41;
+    background: #fdd835;
+    border-radius:5px;
+    position: relative;
+    top: 20px;
+    border: 3px solid #6d4c41;
+}
+.btn-warning2{
+    color: #6d4c41;
+    background: #fdd835;
+    border-radius:10px;
+    border: 3px solid #6d4c41;
+}
+
+.text{
+    color: #FFFDE7;
+}
+
+.col-4{
+    color: #6d4c41;
+}
+.fa-camera{
+    color: #FFFDE7;
+}
+
+.border-bottom{
+    border: 3px ridge #6d4c41;
+}
+
+.card-body {
+    border: solid 3px #6d4c41;/*線*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 12px;
+    text-align: center;
+}
+
+.form-control {
+    border: solid 3px #6d4c41;/*線*/
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 24px;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 5px; 
+}
+
+#meal {
+    width:70px;
+    height:70px;
+    object-fit: fill;
+    max-width:100%;
+    max-height:100%;
+}

@@ -8,7 +8,7 @@
     <div class="row">
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
         @include('home_button')
-        @foreach($meals as $meal) {{--この行を追加--}} 
+        @foreach($meals ?? '' as $meal) {{--この行を追加--}} 
         <div class="card mt-3" style="padding: 0px;background-color: #FFFDE7; justify-content-between">
           <div class="card-body" style="margin: 0px;padding: 10px;background-color: #6D4C41;">
             <div d-flex justify-content-center>
@@ -25,10 +25,10 @@
             </div>
             <div class="d-flex flex-column justify-content-center">
               <div>
-              登録日:{{$meal->meal_limitday->format('Y/m/d')}}
+              登録日:{{$meal->meal_limitday}}
               </div>
               <div>
-              消費期限:{{$meal->meal_limitday->format('Y/m/d')}}
+              消費期限:{{$meal->meal_limitday}}
               </div>
               <div>
               値段:1000円

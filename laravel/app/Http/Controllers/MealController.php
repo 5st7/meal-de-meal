@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Requests\FoodRecodeRequest;
 use App\Meal_info;
@@ -29,12 +29,13 @@ class MealController extends Controller
      ]);
  }
  
- public function alert(){
-      // 賞味期限
-      $toDay = date("Y-m-d H:i:s");
-      $syomikigen = Meal_info::all()->where('user_id',Auth::id())->where('meal_limitday','-',$toDay,'<=',5)->sortBy('meal_limitday');
-      return view('alert',['meals'=>$syomikigen]);
- }
+public function alert(){
+  // 賞味期限
+  $now = Carbon::now();
+  $date = $now->subDays(5);
+  $syomikigen = \DB::table('meals')->where('user_id',Auth::id())->whereDay('meal_limitday','>',$date)->get()->all();
+  return view('alert',['meals'=>$syomikigen]);
+}
 
  public function used(Request $request){
     $meal = Meal_info::where('id',$request->id)->first();

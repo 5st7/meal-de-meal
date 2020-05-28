@@ -59,7 +59,7 @@ return [
     'image' => '投稿画像が間違ってるよ！ちゃんと確認してよね！',
     'in' => 'The selected :attribute is invalid.',
     'in_array' => 'The :attribute field does not exist in :other.',
-    'integer' => 'The :attribute must be an integer.',
+    'integer' => ':attribute には半角数字を入力してください',
     'ip' => 'The :attribute must be a valid IP address.',
     'ipv4' => 'The :attribute must be a valid IPv4 address.',
     'ipv6' => 'The :attribute must be a valid IPv6 address.',
@@ -96,7 +96,7 @@ return [
     'password' => 'The password is incorrect.',
     'present' => 'The :attribute field must be present.',
     'regex' => 'The :attribute format is invalid.',
-    'required' => ':attribute をお忘れですよ！.',
+    'required' => ':attribute をお忘れですよ！',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
     'required_with' => 'The :attribute field is required when :values is present.',
@@ -147,9 +147,9 @@ return [
     */
 
     'attributes' => [
-        "meal_name" => "食品名",
-        "meal_price" => "価格",
-        "meal_image" => "画像"
+        "meal_name" => "【食品名】",
+        "meal_price" => "【価格】",
+        "meal_image" => "【画像】"
     ],
 
 ];

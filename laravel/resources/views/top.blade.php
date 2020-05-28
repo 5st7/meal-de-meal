@@ -29,15 +29,15 @@
             @else
               <div class="far fa-image fa-2x mr-4 grey p-3 white-text rounded-circle" aria-hidden="true"></div>
             @endif
-              <span class="align-self-center">
-                  <h6>{{$meal->meal_name}}</h6>
-                  〜{{$meal->meal_limitday->format('Y/m/d')}}
-              </span>
+            <span class="align-self-center">
+                <h6>{{$meal->meal_name}}</h6>
+                〜{{$meal->meal_limitday->format('Y/m/d')}}
+            </span>
             <a href="/" type="button" class="del-butt" form="del-button">済</a>　
           </div>
           @endforeach
 <!--           <form id="del-button" method="POST" action="{{ route('logout') }}" form="del-button">
-        @csrf --> -->
+        @csrf -->
           </div>
       </div>
     </div>

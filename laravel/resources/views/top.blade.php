@@ -14,11 +14,11 @@
         </div>
         <div class="d-flex justify-content-between">
           <div>今月の食費</div>
-          <div>¥ {{$morth_cost}}</div>
+          <div>¥ {{$month_cost}}</div>
         </div>
         <div class="d-flex justify-content-between">
           <div>冷蔵庫貯金</div>
-          <div>¥</div>
+          <div>¥ {{$freeze_cost}}</div>
         </div>
 
         <div class="list-group-flush mt-5" id="list">

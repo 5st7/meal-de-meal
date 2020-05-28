@@ -1,0 +1,30 @@
+strong {
+    color: #6d4c41;
+    
+}
+
+body {
+    
+    font-size:100%;
+    text-align:center;
+    margin-top: 50px;
+    background-color:#FFFDE7
+}
+.btn-warning1{
+    color:#6d4c41;
+    background:#FDD835;
+    border-radius:5px;
+    border: 1px solid#6d4c41;
+
+   }
+   .text{
+    color:#fff;
+   }
+.col-4{
+    color: #6d4c41;
+}
+.h_line1 {
+    border-bottom: dotted;
+    border-width: 5px;
+    border-color:#6d4c41;
+  }

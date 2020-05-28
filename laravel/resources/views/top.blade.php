@@ -1,13 +1,15 @@
 @extends('app')
+
 @section('title', '一覧')
 
 @section('content')
 
 @include('layouts.nav')
+<span class="h_line1">　　　　　　　　　　　　　　　　　　　　　　　　　</span>
   <div class="container">
     <div class="row">
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
-        @include('home_button')
+      @include('home_button')
         <div class="row mt-5">
           <div class="col-4 col-md-3">今月の目標</div>
           <div class="col-4 col-md-3">¥</div>

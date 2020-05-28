@@ -2,10 +2,15 @@ body{
     margin: 0;
     background-color:rgb(255, 217, 0);
   }
+
+  h2 {
+    color:#6D4C41
+  }
   
   header {
     height: 90px; /*ヘッター縦サイズ*/
     background-color:rgb(255, 217, 0);
+    
   }
   
   #title{

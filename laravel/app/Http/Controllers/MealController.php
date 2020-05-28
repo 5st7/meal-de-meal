@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Meal_info;
 use Auth;
 
+
 class MealController extends Controller
 {
   public function __construct(){

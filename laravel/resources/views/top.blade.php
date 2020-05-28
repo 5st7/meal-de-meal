@@ -9,17 +9,13 @@
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
         @include('home_button')
         <div class="d-flex justify-content-between mt-5">
-          <div>今月の目標</div>
-            <div>¥</div>
-          </div>
-          <div class="d-flex justify-content-between">
-            <div>今月の食費</div>
-              <div>¥ {{$morth_cost}}</div>
-            </div>
-          <div class="d-flex justify-content-between">
-            <div>冷蔵庫貯金</div>
-            <div>¥</div>
-          </div>
+          <div>今月の食費</div>
+          <div>¥ {{$month_cost}}</div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div>冷蔵庫貯金</div>
+          <div>¥ {{$freeze_cost}}</div>
+        </div>
 
         <div class="list-group-flush mt-5" id="list">
         @foreach($mials as $meal)

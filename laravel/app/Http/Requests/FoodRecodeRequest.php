@@ -24,11 +24,11 @@ class FoodRecodeRequest extends FormRequest
     public function rules()
     {
         return [
-                    'meal_name' => 'required',
+                    'meal_name' => 'required|max:255',
                     'meal_limitday' => 'required',
-                    'meal_price' => 'integer',
+                    'meal_price' => 'required|integer|max:255',
                     'meal_category' => 'required',
-                    'meal_image' => 'image',
+                    'meal_image' => 'required|image',
                 ];
     }
 }

@@ -10,17 +10,29 @@ use Auth;
 class MealController extends Controller
 {
   public function index()  {
+    // 食品リスト
     $mials = Meal_info::all()->where('user_id',Auth::id())->where('used',false)->sortBy('meal_limitday');
    
+    // 今月の食費
     $month_cost = Meal_info::whereMonth('created_at',5)->where('user_id',Auth::id())
        ->sum('meal_price');
 
+    // 冷蔵庫貯金
     $freeze_cost = Meal_info::all()->where('user_id',Auth::id())->where('used',false)->sum('meal_price');
+
+
+
     return view('top',[
      'mials' => $mials,
      'freeze_cost' => $freeze_cost,
      'month_cost' => $month_cost
      ]);
+ }
+   public function alert(){
+      // 賞味期限
+      $toDay = date("Y-m-d H:i:s");
+      $syomikigen = Meal_info::all()->where('user_id',Auth::id())->where('meal_limitday','-',$toDay,'<=',5)->sortBy('meal_limitday');
+      return view('alert',$syomikigen);
  }
 
  public function use_meal(Request $request){

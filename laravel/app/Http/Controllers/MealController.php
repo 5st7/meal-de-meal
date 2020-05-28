@@ -12,12 +12,17 @@ class MealController extends Controller
   public function index()  {
     $mials = Meal_info::all()->where('user_id',Auth::id())->sortBy('meal_limitday');
 
-    $morth_cost = Meal_info::whereMonth('created_at',5)
+    $morth_cost = Meal_info::whereMonth('created_at',5)->where('user_id',Auth::id())
        ->orderBy('created_at')->sum('meal_price');
 
     return view('top',['mials' => $mials],['morth_cost' => $morth_cost]);
  }
 
+ public function use_meal(Request $request){
+    $meal = Meal_info::where('id',$request->id)->first();
+    $meal->used = true;
+    $meal->save();
+ }
 
   public function store(FoodRecodeRequest $request){
     $file_path = $request->file('meal_image')->store('public');

@@ -29,11 +29,11 @@
                   <h6>{{$meal->meal_name}}</h6>
                   〜{{$meal->meal_limitday->format('Y/m/d')}}
               </span>
-            <a href="/" type="button" class="del-butt" form="del-button">済</a>　
+            <button type="submit" name="id" class="del-butt" value="{{$meal->id}}" form="del-button">済</button>　
           </div>
+          <form id="del-button" method="POST" action="/used" form="del-button">
+          @csrf
           @endforeach
-<!--           <form id="del-button" method="POST" action="{{ route('logout') }}" form="del-button">
-        @csrf --> -->
           </div>
       </div>
     </div>

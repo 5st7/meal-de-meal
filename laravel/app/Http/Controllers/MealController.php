@@ -36,10 +36,12 @@ class MealController extends Controller
       return view('alert',['meals'=>$syomikigen]);
  }
 
- public function use_meal(Request $request){
+ public function used(Request $request){
     $meal = Meal_info::where('id',$request->id)->first();
     $meal->used = true;
     $meal->save();
+
+    return redirect('/');
  }
 
   public function store(FoodRecodeRequest $request){

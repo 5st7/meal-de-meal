@@ -5,7 +5,8 @@
 @section('content')
 @include('layouts.nav')
 <div class="container">
-    <div class="row">
+@include('home_button')
+  <div class="row">
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
         <div class="card mt-5 shadow-none" style="background-color: #FFFDE7;">
           <div class="card-body text-center" style="background-color: #a1887f;">

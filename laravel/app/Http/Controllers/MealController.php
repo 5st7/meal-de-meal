@@ -33,7 +33,7 @@ public function alert(){
   // 賞味期限
   $now = Carbon::now();
   $date = $now->subDays(5);
-  $syomikigen = \DB::table('meals')->where('user_id',Auth::id())->whereDay('meal_limitday','>',$date)->get()->all();
+  $syomikigen = \DB::table('meals')->where('user_id',Auth::id())->whereDay('meal_limitday','>',$date)->where('used',false)->get()->all();
   return view('alert',['meals'=>$syomikigen]);
 }
 

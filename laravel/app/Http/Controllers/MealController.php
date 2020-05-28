@@ -10,13 +10,17 @@ use Auth;
 class MealController extends Controller
 {
   public function index()  {
-    $mials = Meal_info::all()->where('user_id',Auth::id())->sortBy('meal_limitday');
+    $mials = Meal_info::all()->where('user_id',Auth::id())->where('used',false)->sortBy('meal_limitday');
    
     $month_cost = Meal_info::whereMonth('created_at',5)->where('user_id',Auth::id())
        ->sum('meal_price');
 
     $freeze_cost = Meal_info::all()->where('user_id',Auth::id())->where('used',false)->sum('meal_price');
-    return view('top',['mials' => $mials],['month_cost' => $month_cost],['freeze_cost'=> $freeze_cost]);
+    return view('top',[
+     'mials' => $mials,
+     'freeze_cost' => $freeze_cost,
+     'month_cost' => $month_cost
+     ]);
  }
 
  public function use_meal(Request $request){

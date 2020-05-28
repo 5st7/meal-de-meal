@@ -18,7 +18,7 @@
         </div>
         <div class="d-flex justify-content-between">
           <div>冷蔵庫貯金</div>
-          <div>¥ {{$freeze_cost}}}</div>
+          <div>¥ {{$freeze_cost}}</div>
         </div>
 
         <div class="list-group-flush mt-5" id="list">

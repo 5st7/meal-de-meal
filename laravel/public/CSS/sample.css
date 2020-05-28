@@ -19,14 +19,17 @@ body {
     background: #fdd835;
     border-radius:5px;
     position: relative;
-    top: 20px;
+    top: 30px;
     border: 3px solid #6d4c41;
 }
 
 .btn-warning2{
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #6d4c41;
     background: #fdd835;
     border-radius:10px;
+    position: relative;
 }
 
 .text{
@@ -56,10 +59,10 @@ body {
 
 .form-control {
     border: solid 3px #6d4c41;/*線*/
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     padding: 24px;
 }
 
@@ -74,4 +77,56 @@ body {
     object-fit: fill;
     max-width:100%;
     max-height:100%;
+}
+
+.set{
+    color: #6d4c41;
+    font-size: 2.3em;
+}
+
+.home{
+    color: #6d4c41;
+    font-size: 2.8em;
+}
+
+.d-flex{
+    margin-top: 8px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+/* .del-butt{
+    background-color:#FFFDE7;
+    width: 50px;
+    height: 50px;
+} */
+
+.del-butt {
+    margin: 0 0 0 auto;
+    margin-top: 20px;
+    font-family: "ヒラギノ丸ゴ ProN";
+    font-size: 8px;
+    display: inline-block;
+    text-decoration: none;
+    background: #FF4848;
+    color: #FFFde7;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #cf3b3b;
+    transition: .4s;
+  }
+
+
+  .del-butt:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+    border-bottom: none;
 }

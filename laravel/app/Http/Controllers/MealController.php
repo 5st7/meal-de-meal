@@ -11,11 +11,12 @@ class MealController extends Controller
 {
   public function index()  {
     $mials = Meal_info::all()->where('user_id',Auth::id())->sortBy('meal_limitday');
+   
+    $month_cost = Meal_info::whereMonth('created_at',5)->where('user_id',Auth::id())
+       ->sum('meal_price');
 
-    $morth_cost = Meal_info::whereMonth('created_at',5)->where('user_id',Auth::id())
-       ->orderBy('created_at')->sum('meal_price');
-
-    return view('top',['mials' => $mials],['morth_cost' => $morth_cost]);
+    $freeze_cost = Meal_info::all()->where('user_id',Auth::id())->where('used',false)->sum('meal_price');
+    return view('top',['mials' => $mials],['month_cost' => $month_cost],['freeze_cost'=> $freeze_cost]);
  }
 
  public function use_meal(Request $request){

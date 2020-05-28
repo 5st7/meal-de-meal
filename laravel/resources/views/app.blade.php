@@ -15,6 +15,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="CSS/sample.css">
   <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
   <script>
     var OneSignal = window.OneSignal || [];
     OneSignal.push(function() {
@@ -22,7 +23,7 @@
         appId: "3f264d86-5e75-48e4-a725-7762be1c8c84",
       });
     });
-  </script>
+</script>
 </head>
 
 <body>

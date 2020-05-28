@@ -26,9 +26,9 @@ class FoodRecodeRequest extends FormRequest
         return [
                     'meal_name' => 'required',
                     'meal_limitday' => 'required',
-                    'meal_price' => 'integer',
+                    'meal_price' => 'required|integer',
                     'meal_category' => 'required',
-                    'meal_image' => 'image',
+                    'meal_image' => 'required|image',
                 ];
     }
 }

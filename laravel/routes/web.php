@@ -21,14 +21,11 @@ Auth::routes();
 
 Route::get('/', 'MealController@index');
 
-Route::get('/setting', function () {
-    return view('setting');
-});
-
 Route::get('/foodrecode', function () {
     return view('foodrecode');
 });
 
 Route::post('/', 'MealController@use_meal');
 Route::post('/foodrecode', 'MealController@store');
-Route::get('/alert','MealController@index');
+Route::get('/alert', 'MealController@alert');
+

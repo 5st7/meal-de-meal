@@ -10,7 +10,7 @@ use Auth;
 class MealController extends Controller
 {
   public function index()  {
-    $mials = Meal_info::all()->sortByDesc('created_at');
+    $mials = Meal_info::all()->where('user_id',Auth::id())->sortBy('meal_limitday');
 
     $morth_cost = Meal_info::whereMonth('created_at',5)
        ->orderBy('created_at')->sum('meal_price');

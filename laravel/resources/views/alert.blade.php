@@ -8,7 +8,7 @@
     <div class="row">
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
         @include('home_button')
-        @foreach($mials as $meal) {{--この行を追加--}} 
+        @foreach($meals as $meal) {{--この行を追加--}} 
         <div class="card mt-3" style="padding: 0px;background-color: #FFFDE7; justify-content-between">
           <div class="card-body" style="margin: 0px;padding: 10px;background-color: #6D4C41;">
             <div d-flex justify-content-center>

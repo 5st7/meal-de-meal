@@ -13,11 +13,19 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
-  <!--   全体スタイルシート -->
-  <link rel="stylesheet" type="text/css" href="CSS/sample.css">
+  <link rel="stylesheet" href="CSS/sample.css">
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "3f264d86-5e75-48e4-a725-7762be1c8c84",
+      });
+    });
+  </script>
 </head>
 
-<body>
+<body data-spy="scroll">　
   @yield('content')
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

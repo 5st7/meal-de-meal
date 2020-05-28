@@ -8,36 +8,36 @@
     <div class="row">
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
         @include('home_button')
-        <div class="d-flex justify-content-between mt-5">
-          <div>今月の目標</div>
-          <div>¥</div>
-        </div>
-        <div class="d-flex justify-content-between">
-          <div>今月の食費</div>
-          <div>¥ {{$month_cost}}</div>
-        </div>
-        <div class="d-flex justify-content-between">
-          <div>冷蔵庫貯金</div>
-          <div>¥ {{$freeze_cost}}</div>
-        </div>
-
-        <div class="list-group-flush mt-5" id="list">
-          @foreach($mials as $meal)
-          <div class="list-group-item d-flex justify-content-between">
-            @if($meal->meal_image != null)
-              <img id="meal" src="/storage/{{$meal->meal_image}}" class="rounded-circle">
-            @else
-              <div class="far fa-image fa-2x mr-4 grey p-3 white-text rounded-circle" aria-hidden="true"></div>
-            @endif
-            <span class="align-self-center">
+        @foreach($mials as $meal) {{--この行を追加--}} 
+        <div class="card mt-3" style="padding: 0px;background-color: #FFFDE7; justify-content-between">
+          <div class="card-body" style="margin: 0px;padding: 10px;background-color: #6D4C41;">
+            <div d-flex justify-content-center>
+              <div class="fo nt-weight-bold" style="font-size: 18px;
+                color: #FFFDE7;">
               {{$meal->meal_name}}
-            </span>
-            <span class="align-self-center">
-              賞味期限:{{$meal->meal_limitday->format('Y/m/d')}}
-            </span>
+              </div> 
+            </div>
           </div>
-          @endforeach
+          <div class="card-body pt-0 pb-2" style="border:none;">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img id="meal" src="/storage/{{$meal->meal_image}}" class="rounded-circle">
+            </div>
+            <div class="d-flex flex-column justify-content-center">
+              <div>
+              登録日:{{$meal->meal_limitday->format('Y/m/d')}}
+              </div>
+              <div>
+              消費期限:{{$meal->meal_limitday->format('Y/m/d')}}
+              </div>
+              <div>
+              値段:1000円
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
+        @endforeach
       </div>
     </div>
   </div>

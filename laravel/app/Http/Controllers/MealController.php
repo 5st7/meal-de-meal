@@ -16,7 +16,7 @@ class MealController extends Controller
        ->sum('meal_price');
 
     $freeze_cost = Meal_info::all()->where('user_id',Auth::id())->where('used',false)->sum('meal_price');
-    return view('top',[
+    return view('alert',[
      'mials' => $mials,
      'freeze_cost' => $freeze_cost,
      'month_cost' => $month_cost

@@ -1,6 +1,6 @@
 <header>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar border.border-0:" style="background-color: #fdd835;"> 
-  <a class="navbar-brand font-weight-bold mr-auto" href="/"><strong>みーるでMEAL</strong></a>
+  <img class=“img” src="meal.png" style="width: 150px; height: 50px;">
   <a href="/" type="button" class="home fas fa-home"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

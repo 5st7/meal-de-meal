@@ -48,27 +48,26 @@ body {
     border: 3px ridge #6d4c41;
 }
 
+.food{
+  background-color: #A1887F;
+}
+
 .card-body {
-    border: solid 3px #6d4c41;/*線*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 10px;
     margin: 12px;
     text-align: center;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic     Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+    color:#6d4c41;
 }
 
 .form-control {
     border: solid 3px #6d4c41;/*線*/
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 10px;
     padding: 24px;
 }
 
 .card {
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 5px; 
 }
 
@@ -104,7 +103,6 @@ body {
 
 #logout {
     text-align:center;
-
 }
 
 .del-butt {

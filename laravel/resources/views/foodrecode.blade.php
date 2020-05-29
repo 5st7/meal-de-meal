@@ -8,14 +8,14 @@
   <div class="row">
       <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
         @include('home_button')
-        <div class="card mt-5 shadow-none" style="background-color: #FFFDE7;">
-          <div class="card-body text-center" style="background-color: #a1887f;">
+        <div class="card mt-5 food">
+          <div class="card-body text-center">
           @include('error_list')
           <form method="POST" action="foodrecode"  enctype="multipart/form-data">
                 @csrf
             <div class="form-group">
                 <label for="select1a" style="color: #fffde7;">カテゴリ選択</label>
-                <select id="select1a" name="meal_category" class="form-control" style="padding:0px; background-color: #fffde7;">
+                <select id="select1a" name="meal_category" class="form-control" value="{{old('meal_category')}}" style="padding:0px; background-color: #fffde7;">
                         <option>野菜・果物</option>
                         <option>飲料</option>
                         <option>肉</option>
@@ -27,7 +27,7 @@
             </div>
             <div class="form-group">
                 <label for="text6b" style="color: #fffde7;">食品名</label>
-                <input class="form-control" name="meal_name" type="text" id="text6b" placeholder="ここに入力" style="background-color: #fffde7;">
+                <input class="form-control" name="meal_name" value="{{old('meal_name')}}" type="text" id="text6b" placeholder="ここに入力" style="background-color: #fffde7;">
             </div>
             <div class="form-group">
                 <label for="text6b" style="color: #fffde7;">賞味・消費期限</label>
@@ -35,7 +35,7 @@
             </div>
             <div class="form-group">
                 <label for="text6b" style="color: #fffde7;">価格</label>
-                <input class="form-control" name="meal_price" type="text" id="text6b" placeholder="ここに入力" style="background-color: #fffde7;">
+                <input class="form-control" value="{{old('meal_price')}}" name="meal_price" type="text" id="text6b" placeholder="ここに入力" style="background-color: #fffde7;">
             </div>
             <div>
             <label class="float-left form-group" style="top:50%">

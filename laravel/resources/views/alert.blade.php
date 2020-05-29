@@ -10,10 +10,9 @@
         @include('home_button')
         @foreach($meals as $meal) {{--この行を追加--}} 
         <div class="card mt-3" style="padding: 0px;background-color: #FFFDE7; justify-content-between">
-          <div class="card-body" style="margin: 0px;padding: 10px;background-color: #6D4C41;">
+          <div class="card-body" style="margin: 0px;padding: 8px;background-color: #6D4C41;">
             <div d-flex justify-content-center>
-              <div class="fo nt-weight-bold" style="font-size: 18px;
-                color: #FFFDE7;">
+              <div class="fo nt-weight-bold" style="font-size: 18px; color: #FFFDE7;">
               {{$meal->meal_name}}
               </div> 
             </div>

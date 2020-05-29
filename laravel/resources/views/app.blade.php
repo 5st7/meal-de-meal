@@ -23,7 +23,7 @@
         appId: "3f264d86-5e75-48e4-a725-7762be1c8c84",
       });
     });
-</script>
+  </script>
 </head>
 
 <body data-spy="scroll">　

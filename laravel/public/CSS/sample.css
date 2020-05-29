@@ -3,6 +3,8 @@ strong {
 }
 
 body {
+    margin: 0;
+    padding-top: 0px;
     font-size:100%;
     text-align:center;
     font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
@@ -48,7 +50,7 @@ body {
 }
 
 .card-body {
-    border: solid 3px #6d4c41;/*線*/
+    box-shadow: 2px 2px 3px 3px #cccccc;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -58,7 +60,6 @@ body {
 }
 
 .form-control {
-    border: solid 3px #6d4c41;/*線*/
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -99,7 +100,7 @@ body {
     margin: 0 0 0 auto;
     margin-top: 20px;
     font-family: "ヒラギノ丸ゴ ProN";
-    font-size: 8px;
+    font-size: 12px;
     display: inline-block;
     text-decoration: none;
     background: #FF4848;
@@ -123,4 +124,11 @@ body {
     transform: translateY(2px);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
     border-bottom: none;
+}
+
+.nt-weight-bold{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }

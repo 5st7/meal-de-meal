@@ -1,1 +1,2 @@
-<h1 style="color:#6d4c41;">みーるでMEAL</h1>
+<img src="meal.png" height="128" alt="みーるでMEAL" style="justify-content: center;">
+

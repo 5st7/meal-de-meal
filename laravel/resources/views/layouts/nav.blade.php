@@ -1,6 +1,10 @@
 <header>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar border.border-0:" style="background-color: #fdd835;"> 
+<<<<<<< HEAD
   <img class="img" src="img/meal.png">
+=======
+  <img class=“img” src="meal.png" style="width: 150px; height: 50px;">
+>>>>>>> dc5763e0351ad0527b8bb25dde60048bf8c9699f
   <a href="/" type="button" class="home fas fa-home"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

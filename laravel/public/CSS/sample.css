@@ -8,7 +8,8 @@ body {
     font-size:100%;
     text-align:center;
     font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
-    background-color:#FFFDE7
+    background-color:#FFFDE7;
+    padding-top:60px;
 }
 
 .list-group-item {
@@ -96,6 +97,20 @@ body {
     margin-right: 9px;
 }
 
+<<<<<<< HEAD
+=======
+/* .del-butt{
+    background-color:#FFFDE7;
+    width: 50px;
+    height: 50px;
+} */
+
+#logout {
+    text-align:center;
+
+}
+
+>>>>>>> 3b2a966f2b2c7176030b32d0716faa8d00005b5a
 .del-butt {
     margin: 0 0 0 auto;
     margin-top: 20px;

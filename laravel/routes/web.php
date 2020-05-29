@@ -25,7 +25,7 @@ Route::get('/foodrecode', function () {
     return view('foodrecode');
 });
 
-Route::post('/', 'MealController@use_meal');
+Route::post('/used', 'MealController@used');
 Route::post('/foodrecode', 'MealController@store');
 Route::get('/alert', 'MealController@alert');
 
